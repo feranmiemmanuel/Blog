@@ -9,7 +9,7 @@ use App\Models\Category;
 class HomeController extends Controller
 {
   public function home(){
-    $posts = Post::all();
+    $posts = Post::orderBy('id','desc')->paginate(2);
     $categories = Category::all();
     return view('home',['posts'=>$posts, 'categories'=>$categories]);
   }
