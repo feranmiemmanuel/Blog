@@ -1,5 +1,8 @@
 @extends('layout')
 @section('title','Post Detail')
+@push('styles')
+<link href="{{asset('css/blog-post.css')}}" rel="stylesheet">
+@endpush
 @section('content')
 
 <div class="col-lg-8">
@@ -94,7 +97,4 @@
         </div>
 
       </div>
-
-
-
 @endsection

@@ -11,11 +11,11 @@
   <title>@yield('title')</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/blog-home.css" rel="stylesheet">
-  <link href="css/blog-post.css" rel="stylesheet">
+  <link href="{{asset('css/blog-home.css')}}" rel="stylesheet">
+  @stack('styles')
 
 </head>
 
