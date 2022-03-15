@@ -18,7 +18,7 @@ use App\Http\Controllers\SettingController;
 */
 
 Route::get('/', [HomeController::class, 'home']);
-Route::get('/detail/{id}', [HomeController::class, 'detail']);
+Route::get('/detail/{slug}/{id}', [HomeController::class, 'detail']);
 //Admin Routes
 Route::get('/admin/login', [AdminController::class, 'login']);
 Route::get('/admin/logout', [AdminController::class, 'logout']);

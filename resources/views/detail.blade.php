@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title','Post Detail')
+@section('title',$detail->title)
 @push('styles')
 <link href="{{asset('css/blog-post.css')}}" rel="stylesheet">
 @endpush
@@ -24,7 +24,7 @@
         <hr>
 
         <!-- Preview Image -->
-        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+        <img class="img-fluid rounded" src="{{asset('imgs/thumb/'.$detail->full_img)}}" alt="{{$detail->title}}">
 
         <hr>
 

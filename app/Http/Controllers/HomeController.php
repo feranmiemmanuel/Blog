@@ -20,7 +20,7 @@ class HomeController extends Controller
     return view('home',['posts'=>$posts, 'categories'=>$categories]);
   }
   //Post detail
-  public function detail(Request $request,$postId){
+  public function detail(Request $request,$slug,$postId){
     $detail = Post::find($postId);
     $categories = Category::all();
     return view('detail',['detail'=>$detail, 'categories'=>$categories]);
