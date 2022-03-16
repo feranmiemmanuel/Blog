@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
+    public function comment(){
+        return $this->hasMany('App\Models\Comment')->orderBy('id','desc');
+    }
 }
