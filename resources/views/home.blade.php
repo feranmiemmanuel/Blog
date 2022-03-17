@@ -19,8 +19,8 @@
             <a href="{{url('detail/'.Str::slug($post->title).'/'.$post->id)}}" class="btn btn-primary">Read</a>
           </div>
           <div class="card-footer text-muted">
-            Posted on January 1, 2017 by
-            <a href="#">Start Bootstrap</a>
+            Posted on {{$post->created_at}} by
+            <a href="#">Feranmi</a>
           </div>
           @endforeach
           @else

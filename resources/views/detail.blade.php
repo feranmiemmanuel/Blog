@@ -11,10 +11,10 @@
         <h1 class="mt-4">{{$detail->title}}</h1>
 
         <!-- Author -->
-        <p class="lead">
+      <!--  <p class="lead">
           by
           <a href="#">Start Bootstrap</a>
-        </p>
+        </p>-->
 
         <hr>
 
