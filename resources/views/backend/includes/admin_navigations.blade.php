@@ -104,7 +104,7 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="./comments.php">
+        <a class="nav-link" href="/admin/comments">
           <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
           <span>Comments</span></a>
       </li>
