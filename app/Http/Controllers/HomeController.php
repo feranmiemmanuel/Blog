@@ -8,7 +8,7 @@ use App\Models\Category;
 
 class HomeController extends Controller
 {
-  public function home(Request $request){
+  public function index(Request $request){
     if($request->has('search')){
       $search = $request->search;
       $posts = Post::where('title', 'like', '%'.$search.'%')->orderBy('id', 'desc')->paginate(1);

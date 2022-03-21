@@ -17,7 +17,7 @@ use App\Http\Controllers\SettingController;
 |
 */
 
-Route::get('/', [HomeController::class, 'home']);
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/detail/{slug}/{id}', [HomeController::class, 'detail']);
 //Admin Routes
 Route::get('/admin/login', [AdminController::class, 'login']);
@@ -35,3 +35,6 @@ Route::get('/admin/settings', [SettingController::class, 'index']);
 Route::post('/admin/settings', [SettingController::class, 'save_settings']);
 //Comments
 Route::get('/admin/comments',[CommentsController::class, 'index']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -41,9 +41,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
           </li>
+          @guest
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{url('login')}}">Login</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url('register')}}">Register</a>
+          </li>
+          @else
+          <li class="nav-item">
+            <a class="nav-link" href="{{url('logout')}}">Logout</a>
+          </li>
+          @endguest
         </ul>
       </div>
     </div>
@@ -74,7 +83,7 @@
         </div>
 
         <!-- Categories Widget -->
-        <div class="card my-4">
+        <!--<div class="card my-4">
           <h5 class="card-header">Categories</h5>
           <div class="card-body">
             <div class="row">
@@ -93,7 +102,7 @@
               @endif
             </div>
           </div>
-        </div>
+        </div>-->
 <!-- Categories Widget -->
         <div class="card my-4">
           <h5 class="card-header">Recent Posts</h5>
